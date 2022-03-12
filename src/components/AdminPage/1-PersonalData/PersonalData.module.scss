@@ -1,0 +1,11 @@
+.editPanel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button{
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
