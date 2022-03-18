@@ -1,11 +1,39 @@
-.editPanel{
+.editPanel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &:after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: #a8a4a4;
+    position: absolute;
+    bottom: 460px;
+  }
+
+  .button {
+    border: 0;
+    outline: none;
+    background-color: transparent;
+  }
 }
 
-.button{
-  border: 0;
-  outline: none;
-  background-color: transparent;
+.adminData {
+  display: flex;
+  flex-direction: row;
+
+  .imgStyle {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    margin-right: 30px;
+  }
+}
+
+
+.imgStyle {
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
 }

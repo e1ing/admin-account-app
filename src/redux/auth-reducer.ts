@@ -20,6 +20,7 @@ export const authReducer = (state: InitialStateType = initialState, action: Auth
 
 export const setIsLoggedIn = (value: boolean) => ({type: "AUTH/SET-IS-LOGGED-IN", value} as const)
 
+
 export const login = (username: string, password: string) => (dispatch: Dispatch<AuthActionType>) => {
     authAPI.login(username, password)
         .then(res => {
@@ -33,3 +34,4 @@ export const logout = () => (dispatch: Dispatch<AuthActionType>) => {
             dispatch(setIsLoggedIn(false))
         })
 }
+
